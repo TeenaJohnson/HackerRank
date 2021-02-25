@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int t = scan.nextInt();
+
+        for(int c=0;c<t;c++){
+            
+        String text = null;
+        
+        text = scan.next();
+        char[] charArray = text.toCharArray();
+
+        int n = text.length();
+        String temp1 = "";
+        String temp2 = " ";
+        for(int i=0; i<n; i++){
+            if(i%2 == 0){
+                temp1 += charArray[i];
+            }
+            else{
+                temp2 += charArray[i];
+            }
+        }
+        System.out.println(temp1+""+temp2);
+    }
+    }
+}
